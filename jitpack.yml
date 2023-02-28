@@ -1,3 +1,2 @@
-install:
-- FILE="-Dfile=target/MinecraftRanks-1.0-SNAPSHOT.jar"
-- mvn install:install-file $FILE -DgroupId=com.minecraft.ranks -DartifactId=minecraftranks -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true
+jdk:
+ - openjdk8
