@@ -1,0 +1,28 @@
+name: MinecraftRanks
+version: 1.0.0
+main: com.minecraft.ranks.App
+description: Ranks plugin for minecraft
+
+softdepend: 
+  - PlaceholderAPI
+
+commands:
+  rank:
+    description: Ranks a player
+    permission: minecraftranks.rank
+    permission-message: You do not have permissions to run this command.
+  minecraftranks:
+    descriptions: The minecraft ranks plugin command
+    permission: minecraftranks.*
+    permission-message: You do not have permissions to run this command.
+
+permissions:
+  minecraftranks.*:
+    description: All Permissions of MinecraftRanks
+    default: op
+    children:
+      - minecraftranks.rank
+
+  minecraftranks.rank:
+    description: Ranks a player
+    default: op

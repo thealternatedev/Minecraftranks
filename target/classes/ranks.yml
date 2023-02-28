@@ -1,0 +1,4 @@
+defaultRank: newbie
+
+newbie:
+  prefix: "&aNewbie"
