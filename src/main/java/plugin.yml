@@ -1,5 +1,5 @@
 name: MinecraftRanks
-version: 1.0.0
+version: 1.0.1
 main: com.minecraft.ranks.App
 description: Ranks plugin for minecraft
 

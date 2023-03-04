@@ -17,9 +17,14 @@ public class RankNameExpansion extends PlaceholderExpansion {
     private YamlMaker ranks;
 
     public RankNameExpansion(App plugin) {
+        super();
         this.plugin = plugin;
         this.players = plugin.getPlayersConfig();
         this.ranks = plugin.getRanksConfig();
+    }
+
+    public App getpl() {
+        return this.plugin;
     }
 
     @Override
@@ -29,7 +34,7 @@ public class RankNameExpansion extends PlaceholderExpansion {
 
     @Override
     public @NotNull String getIdentifier() {
-        return "rank_name";
+        return "PlayerRank";
     }
 
     @Override
