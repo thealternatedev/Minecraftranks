@@ -58,6 +58,9 @@ public class MinecraftRanksAPI {
             }
         }
 
+        PlayerRankChangeEvent event = new PlayerRankChangeEvent(player, rank);
+        plugin.getServer().getPluginManager().callEvent(event);
+
         plugin.getPlayersConfig().getConfig().set(player.getUniqueId().toString() + ".rank", rank);
         plugin.getPlayersConfig().saveConfig();
     }

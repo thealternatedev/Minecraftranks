@@ -6,7 +6,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.minecraft.ranks.api.MinecraftRanksAPI;
+
 import com.minecraft.ranks.commands.MinecraftRanksCommand;
 import com.minecraft.ranks.commands.RankCommand;
 import com.minecraft.ranks.expansions.RankNameExpansion;
